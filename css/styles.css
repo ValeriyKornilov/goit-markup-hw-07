@@ -515,17 +515,17 @@ footer .logo {
 .footer-contacts {
   margin-top: 20px;
 }
-.footer-item:not(:last-child) {
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-adress {
+.footer-contacts__adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer-link {
+.footer-contacts__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -540,8 +540,8 @@ footer .logo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -598,7 +598,7 @@ footer .logo {
   margin-left: auto;
   color: #ffffff;
 }
-.footer-subscribe-text {
+.footer-subscribe__text {
   display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -607,10 +607,10 @@ footer .logo {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.subscribe {
+.footer-subscribe__form {
   display: flex;
 }
-.subscribe-input {
+.footer-subscribe__input {
   display: flex;
   align-items: center;
   min-width: 358px;
@@ -627,14 +627,14 @@ footer .logo {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn-submit-icon {
+.footer-btn__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
   fill: #ffffff;
 }
 
-.footer-btn-submit {
+.footer-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -654,8 +654,8 @@ footer .logo {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn-submit:hover,
-.footer-btn-submit:focus {
+.footer-btn:hover,
+.footer-btn:focus {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

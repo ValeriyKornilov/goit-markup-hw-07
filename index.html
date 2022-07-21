@@ -428,18 +428,20 @@
             >Web<span class="logo-footer">Studio</span></a
           >
           <ul class="footer-contacts list">
-            <li class="footer-item">
-              <a class="footer-adress link" href=""
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__adress link" href=""
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="footer-item">
-              <a class="footer-link link" href="mailto:info@defstidio.com"
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link link"
+                href="mailto:info@defstidio.com"
                 >info@defstidio.com</a
               >
             </li>
-            <li class="footer-item">
-              <a class="footer-link link" href="tel:+380961111111"
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link link" href="tel:+380961111111"
                 >+380961111111</a
               >
             </li>
@@ -479,18 +481,22 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <b class="footer-subscribe-text">Подпишитесь на рассылку</b>
-          <form class="subscribe" name="subscribe" autocomplete="on">
+          <b class="footer-subscribe__text">Подпишитесь на рассылку</b>
+          <form
+            class="footer-subscribe__form"
+            name="subscribe"
+            autocomplete="on"
+          >
             <input
               type="email"
               name="subscribe-mail"
               id="subscribe-mail"
               placeholder="E-mail"
-              class="subscribe-input"
+              class="footer-subscribe__input"
             />
-            <button type="submit" class="footer-btn-submit">
+            <button type="submit" class="footer-btn">
               Подписаться
-              <svg class="footer-btn-submit-icon">
+              <svg class="footer-btn__icon">
                 <use href="./images/symbol-defs6hw.svg#icon-icon-send"></use>
               </svg>
             </button>
