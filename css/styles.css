@@ -96,8 +96,12 @@ section {
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+.logo__text {
   color: black;
+}
+
+.logo__text--inverse {
+  color: #ffffff;
 }
 
 .site-nav {
@@ -113,10 +117,6 @@ section {
   margin-right: 50px;
 }
 
-.site-nav .site-nav__link.current {
-  color: #2196f3;
-}
-
 .site-nav__link {
   color: #212121;
   display: block;
@@ -128,7 +128,11 @@ section {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link.current::after {
+.site-nav__link--current {
+  color: #2196f3;
+}
+
+.site-nav__link.site-nav__link--current::after {
   content: "";
   display: block;
   width: 100%;
