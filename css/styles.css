@@ -27,6 +27,20 @@ html {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -86,31 +100,6 @@ section {
   color: black;
 }
 
-.contacts__link {
-  display: flex;
-  align-items: center;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-  text-align: center;
-  justify-content: center;
-}
-
-.contacts li:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav {
   font-family: "Roboto";
   font-weight: 500;
@@ -154,6 +143,31 @@ section {
 .site-nav__link:hover,
 .site-nav__link:focus {
   color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.contacts li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:hover,
@@ -202,7 +216,7 @@ section {
   padding-bottom: 200px;
 }
 
-.hero-text {
+.hero__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -217,7 +231,7 @@ section {
   margin-right: auto;
 }
 
-.button-hero {
+.hero__button {
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
@@ -239,35 +253,22 @@ section {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-hero:hover,
-.button-hero:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--button-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*---------------------------- benefits----------------------------*/
 
-.benefits .li {
+.benefits__item {
   width: 270;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.benefits-list {
+.benefits {
   display: flex;
   justify-content: space-between;
 }
-.benefits-name {
+.benefits__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -278,7 +279,7 @@ section {
   margin-top: 0;
   text-align-last: left;
 }
-.benefits-description {
+.benefits__description {
   width: 270px;
   font-weight: 400;
   margin-top: 0px;
@@ -288,7 +289,7 @@ section {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.benefits-icon {
+.benefits__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,23 +305,15 @@ section {
   padding-top: 0;
 }
 
-.work-picture {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.work-list {
+.work-discription {
   display: flex;
   justify-content: space-between;
 }
 
-.work-foto:not(:last-child) {
+.work-discription__foto:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-text {
-  color: #212121;
-}
 h2 {
   font-weight: 700;
   font-size: 36px;
@@ -335,7 +328,14 @@ h2 {
 .work-tumb {
   position: relative;
 }
-.work-descrip {
+
+.work-tumb__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.work-tumb__discription {
   position: absolute;
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
@@ -378,7 +378,7 @@ h3 {
   margin-bottom: 16px;
   color: var(--primary-text-color);
 }
-.unit-list {
+.unit-person {
   display: flex;
 }
 
@@ -389,7 +389,7 @@ h3 {
   max-width: 100%;
   height: auto;
 }
-.unit-item + .unit-item {
+.unit-person__foto {
   margin-left: 30px;
 }
 .unit-name {
