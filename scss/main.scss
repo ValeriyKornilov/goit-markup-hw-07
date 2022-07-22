@@ -1,3 +1,22 @@
+@import "./utility/normalise";
+@import "./utility/var";
+@import "./utility/hidden";
+@import "./utility/base";
+
+@import "./components/buttons";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/contsec";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/work";
+@import "./components/unit";
+@import "./components/partners";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/example";
+
 :root {
   --primary-text-color: #757575;
   --accent-color: #2196f3;
@@ -264,14 +283,15 @@ section {
 }
 /*---------------------------- benefits----------------------------*/
 
-.benefits__item {
-  width: 270;
-}
-
 .benefits {
   display: flex;
   justify-content: space-between;
 }
+
+.benefits__item {
+  width: 270;
+}
+
 .benefits__name {
   font-weight: 700;
   font-size: 14px;
@@ -537,7 +557,6 @@ footer .logo {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-
   cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
@@ -876,8 +895,6 @@ footer .logo {
 
 /*---------------portfolio.work-type--------------------------*/
 
-.work-type {
-}
 .button-main__link:hover,
 .button-main__link:focus {
   background-color: var(--accent-color);
