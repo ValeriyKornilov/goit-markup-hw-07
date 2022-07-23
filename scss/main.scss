@@ -16,8 +16,8 @@
 @import "./components/footer";
 @import "./components/modal";
 @import "./components/example";
-
-:root {
+@import "./components/portfolio-btn";
+@import "./utility/placeholder" root {
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --button-hover-color: #188ce8;

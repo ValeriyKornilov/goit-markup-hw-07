@@ -1,40 +1,39 @@
-.benefits {
+$color-name: #212121;
+$background-name: #f5f4fa .benefits {
   display: flex;
   justify-content: space-between;
-}
 
-.benefits__item {
-  width: 270;
-}
+  &__item {
+    width: 270;
+  }
 
-.benefits__name {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-  margin-top: 0;
-  text-align-last: left;
-}
-.benefits__description {
-  width: 270px;
-  font-weight: 400;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.benefits__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-name;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align-last: left;
+  }
+  &__description {
+    width: 270px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+  &__icon {
+    @extend %flex-centered
+    width: 270px;
+    height: 120px;
+    background-color: $background-name;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
