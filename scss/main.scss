@@ -1,18 +1,21 @@
-@import "./base/base";
-@import "./base/normalise";
 @import "./utils/var";
-@import "./components/hidden";
-
-@import "./layout/header";
-@import "./layout/footer";
-@import "./components/contsec";
-@import "./layout/logo";
-@import "./layout/header";
-@import "./layout/benefits";
-@import "./layout/work";
-@import "./layout/unit";
-@import "./layout/partners";
-@import "./components/modal";
-@import "./layout/example";
-@import "./layout/portfolio-btn";
+@import "./utils/logo";
 @import "./utils/placeholder";
+
+@import "./base/common";
+@import "./base/reset";
+
+@import "./components/contsec";
+@import "./components/hidden";
+@import "./components/modal";
+@import "./components/title";
+
+@import "./layout/benefits";
+@import "./layout/example";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/partners";
+@import "./layout/portfolio-btn";
+@import "./layout/unit";
+@import "./layout/work";
